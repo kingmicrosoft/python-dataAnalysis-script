@@ -1,0 +1,15 @@
+public static void main(String[] args)  {
+        Process proc = null;
+        System.out.println("execute python script");
+        try {
+            proc = Runtime.getRuntime().exec("python  /home/wisdom/PycharmProjects/Tools/src/kmeans-ap.py");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            proc.waitFor();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
