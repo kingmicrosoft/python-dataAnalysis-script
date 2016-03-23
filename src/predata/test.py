@@ -1,0 +1,4 @@
+import re
+
+print(re.match(r".*WMAC_CLIENT_JOIN_WLAN",
+               "18743183,2015-06-20 21:54:20,2015/6/20 21:52,172.17.110.13,PF-AC-A ,10WMAC,6,WMAC_CLIENT_JOIN_WLAN(l),1,"))
